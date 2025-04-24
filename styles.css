@@ -1,0 +1,25 @@
+:root {
+  --gray950: hsl(0, 0%, 7%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-style: solid;
+  border-radius: 20px;
+  padding: 24px;
+  width: min-content;
+  border-color: var(--gray950);
+}
