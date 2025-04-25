@@ -1,6 +1,7 @@
 :root {
   --gray950: hsl(0, 0%, 7%);
   --yellow: hsl(47, 88%, 63%);
+  --gray500: hsl(0, 0%, 42%);
 }
 
 *,
@@ -8,6 +9,12 @@
 *::after {
   box-sizing: border-box;
   font-family: "figtree", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--yellow);
 }
 
 .container {
@@ -19,6 +26,7 @@
 }
 
 .card {
+  background-color: white;
   border-style: solid;
   border-radius: 20px;
   display: flex;
@@ -28,15 +36,29 @@
   width: min-content;
   border-color: var(--gray950);
   gap: 24px;
+  line-height: 150%;
+  box-shadow: 8px 8px;
 }
 
 .blogimage {
   border-radius: 10px;
 }
 
+.card section h1 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+}
+
 .card section {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+}
+
+.card section p {
+  font-size: 16px;
+  color: var(--gray500);
 }
 
 .author {
@@ -51,9 +73,14 @@
   height: 32px;
 }
 
-.tag {
+.date {
+  font-size: 14px;
+}
+
+.category {
   background-color: var(--yellow);
   padding: 4px 12px;
   border-radius: 4px;
   width: min-content;
+  font-weight: 800;
 }
