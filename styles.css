@@ -1,11 +1,13 @@
 :root {
   --gray950: hsl(0, 0%, 7%);
+  --yellow: hsl(47, 88%, 63%);
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "figtree", sans-serif;
 }
 
 .container {
@@ -19,7 +21,39 @@
 .card {
   border-style: solid;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 24px;
   width: min-content;
   border-color: var(--gray950);
+  gap: 24px;
+}
+
+.blogimage {
+  border-radius: 10px;
+}
+
+.card section {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  gap: 12px;
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+}
+
+.tag {
+  background-color: var(--yellow);
+  padding: 4px 12px;
+  border-radius: 4px;
+  width: min-content;
 }
