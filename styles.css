@@ -50,6 +50,11 @@ body {
   line-height: 150%;
 }
 
+.card section h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
 .card section {
   display: flex;
   flex-direction: column;
