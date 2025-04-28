@@ -38,6 +38,7 @@ body {
   justify-content: center;
   padding: 24px;
   width: clamp(327px, 50vw, 384px);
+  color: var(--gray950);
   border-color: var(--gray950);
   gap: 24px;
   line-height: 150%;
@@ -59,7 +60,11 @@ body {
 
 .card section h1:hover {
   color: var(--yellow);
-  cursor: pointer;
+}
+
+.card section h1 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card section {
