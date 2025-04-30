@@ -39,6 +39,7 @@ body {
 .card {
   background-color: white;
   border-style: solid;
+  border-width: 1px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
